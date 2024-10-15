@@ -174,26 +174,6 @@ var numeroRomano = readLine()!
 var numeroTraducido = traducirNumeros(numeroRomano: numeroRomano.uppercased())
 
 print("El numero traducido a decimal es: \(numeroTraducido)")
-// EJERCICIO 5
- /*
-func traducirNumero(numeroRomano: String)
-{
-    for i in numeroRomano
-    {
-        
-    }
-}
 
-print("----- NÚMEROS ROMANO A DECIMAL -----\n",
-    "Las traducciones son:\n",
-        "- I: 1\n",
-        "- V: 5\n",
-        "- X: 10\n",
-        "- L: 50\n",
-        "- C: 100\n",
-        "- D: 500\n",
-        "- M: 1000\n",
-        "Porfavor, introduce un número romano:")
-var numeroRomano = readLine()!
-traducirNumero(numeroRomano: numeroRomano)
- **/
+// EJERCICIO 6
+
