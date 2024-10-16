@@ -261,10 +261,28 @@ print("La media es", media)
 print("Escribe una frase: ")
 var frase : String = readLine()!
 
-var primeraPalabra = frase.split(separator:" ")
+var palabras = frase.split(separator:" ")
 
 
-primeraPalabra.map(<#T##transform: (Substring) throws -> T##(Substring) throws -> T#>)
+let fraseCensurada = palabras.map({ (palabras: String) -> String in
+    var palabra = $0
+    if palabra.first == "j"
+    {
+        palabra = "j****"
+    }
+    else if palabra.first == "p"
+    {
+        palabra = "p****"
+    }
+    else if palabra.first == "m"
+    {
+        palabra = "m****"
+    }
+    return palabra
+}
+
+
+
 
 
 
