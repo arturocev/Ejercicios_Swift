@@ -256,15 +256,14 @@ let suma = numeros.reduce(0, {total, numero in
 
 let media = suma/5
 print("La media es", media)
-*/
+
 
 print("Escribe una frase: ")
 var frase : String = readLine()!
 
 var palabras = frase.split(separator:" ")
-
-
-let fraseCensurada = palabras.map({ (palabras: String) -> String in
+var frase2 = ""
+palabras.map {
     var palabra = $0
     if palabra.first == "j"
     {
@@ -278,31 +277,11 @@ let fraseCensurada = palabras.map({ (palabras: String) -> String in
     {
         palabra = "m****"
     }
-    return palabra
-}
-
-
-
-
-
-
-
-/*
-for i in 1...primeraPalabra.count{
-    if primeraPalabra[i-1].first == "j"
-    {
-        primeraPalabra[i-1] = "j****"
-    }
-    else if primeraPalabra[i-1].first == "p"
-    {
-        primeraPalabra[i-1] = "p****"
-    }
-    else if primeraPalabra[i-1].first == "m"
-    {
-        primeraPalabra[i-1] = "m****"
+    if frase2.count == 0 {
+        frase2 += palabra
+    } else {
+        frase2 += " " + palabra
     }
 }
-
-var convertirFrase = primeraPalabra.joined(separator: " ")
-print(convertirFrase)
+print(frase2)
  */
