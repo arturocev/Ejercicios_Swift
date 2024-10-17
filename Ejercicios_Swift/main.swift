@@ -285,3 +285,17 @@ palabras.map {
 }
 print(frase2)
  */
+
+
+//EJERCICIO 8
+let reunion = Reunion()
+
+print("Escribe el nombre de la reunión: ")
+reunion.nombre = readLine()!
+var personas : String = String(reunion.numeroPersonas)
+
+print("Escribe el numero de personas que va a haber en la reunión: ")
+personas = readLine()!
+reunion.numeroPersonas = Int(personas)!
+
+print(reunion.descripcion()) 
