@@ -2,18 +2,21 @@ import Foundation
 
 
 class Reunion {
-    var nombre: String
+    var nombreSala: String
     var numeroPersonas: Int
     var fecha: Date
+    var nombreReserva: String
     
     init() {
         numeroPersonas = 2
         fecha = Date()
-        nombre = "Reunión"
+        nombreSala = "Reunión"
+        nombreReserva = "Default"
     }
-    func descripcion() ->  {
-        let texto = nombre
-        return texto
+    
+    func description() -> String {
+        let desc = "El nombre de la sala es " + nombreSala + " en donde acudirán " + String(numeroPersonas) + " personas en nombre de " + nombreReserva
+        return desc
     }
 }
 
